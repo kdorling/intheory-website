@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Our Craft Beers on Artisan Brewery &amp; Taproom</title>
+    <link>https://example.org/beers/</link>
+    <description>Recent content in Our Craft Beers on Artisan Brewery &amp; Taproom</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/beers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Copper Trail Amber Ale</title>
+      <link>https://example.org/beers/copper-trail-amber/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/beers/copper-trail-amber/</guid>
+      <description>&lt;h2 id=&#34;copper-trail-amber-ale&#34;&gt;Copper Trail Amber Ale&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Style:&lt;/strong&gt; American Amber Ale&lt;br&gt;&#xA;&lt;strong&gt;ABV:&lt;/strong&gt; 5.8%&lt;br&gt;&#xA;&lt;strong&gt;IBU:&lt;/strong&gt; 32&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;tasting-notes&#34;&gt;Tasting Notes&lt;/h2&gt;&#xA;&lt;p&gt;Our flagship amber ale strikes the perfect balance between rich malt character and hop complexity. Copper Trail pours a brilliant amber-copper color with a creamy off-white head.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Aroma:&lt;/strong&gt; Toasted caramel, biscuit malt, with hints of citrus and pine from American hops&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Flavor:&lt;/strong&gt; Medium-bodied with layers of caramel sweetness, toffee, and bread crust. A gentle hop bitterness provides balance without overwhelming the malt profile.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

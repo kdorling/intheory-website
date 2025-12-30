@@ -1,3 +1,44 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Artisan Brewery & Taproom'
+theme = 'brew'
+
+[params]
+  description = 'Handcrafted beers brewed with passion and tradition'
+  author = 'Artisan Brewery'
+
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    url = '/'
+    weight = 1
+
+  [[menu.main]]
+    name = 'Our Beers'
+    url = '/beers/'
+    weight = 2
+
+  [[menu.main]]
+    name = 'Taproom'
+    url = '/taproom/'
+    weight = 3
+
+  [[menu.main]]
+    name = 'Events'
+    url = '/events/'
+    weight = 4
+
+  [[menu.main]]
+    name = 'About'
+    url = '/about/'
+    weight = 5
+
+  [[menu.main]]
+    name = 'Contact'
+    url = '/contact/'
+    weight = 6
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

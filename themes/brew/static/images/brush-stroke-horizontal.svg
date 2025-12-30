@@ -1,0 +1,51 @@
+<svg width="800" height="60" viewBox="0 0 800 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Artistic horizontal brushstroke with irregular, organic edges -->
+  <path d="M 2,25 C 8,32 15,28 22,26 C 35,22 48,18 62,20 C 78,22 92,28 108,27 C 125,26 140,22 156,24 C 172,26 188,30 204,29 C 220,28 236,24 252,25 C 268,26 284,29 300,28 C 316,27 332,24 348,26 C 364,28 380,31 396,30 C 412,29 428,26 444,27 C 460,28 476,30 492,29 C 508,28 524,25 540,26 C 556,27 572,30 588,29 C 604,28 620,25 636,26 C 652,27 668,29 684,28 C 700,27 716,24 732,25 C 748,26 764,28 780,27 C 788,26.5 794,26 798,25"
+        stroke="currentColor"
+        stroke-width="14"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        opacity="0.75"/>
+
+  <!-- Secondary stroke for depth -->
+  <path d="M 5,30 C 12,35 18,32 25,30 C 40,26 55,23 70,25 C 88,27 104,32 122,31 C 140,30 158,26 176,28 C 194,30 212,34 230,33 C 248,32 266,28 284,29 C 302,30 320,33 338,32 C 356,31 374,28 392,30 C 410,32 428,35 446,34 C 464,33 482,30 500,31 C 518,32 536,34 554,33 C 572,32 590,29 608,30 C 626,31 644,33 662,32 C 680,31 698,28 716,29 C 734,30 752,32 770,31 C 782,30.5 790,30 795,29"
+        stroke="currentColor"
+        stroke-width="8"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        opacity="0.4"/>
+
+  <!-- Add paint texture with irregular edges -->
+  <path d="M 10,22 C 25,18 40,24 55,21 C 70,18 85,15 100,17 C 120,19 140,25 160,23 C 180,21 200,17 220,19 C 240,21 260,25 280,24 C 300,23 320,20 340,22 C 360,24 380,27 400,26 C 420,25 440,22 460,24 C 480,26 500,29 520,28 C 540,27 560,24 580,25 C 600,26 620,28 640,27 C 660,26 680,23 700,24 C 720,25 740,27 760,26 C 775,25.5 785,25 790,24"
+        stroke="currentColor"
+        stroke-width="18"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        opacity="0.3"
+        style="mix-blend-mode: multiply;"/>
+
+  <!-- Paint drips and splatters -->
+  <ellipse cx="120" cy="38" rx="3" ry="8" fill="currentColor" opacity="0.5"/>
+  <ellipse cx="280" cy="40" rx="2.5" ry="7" fill="currentColor" opacity="0.45"/>
+  <ellipse cx="450" cy="37" rx="3.5" ry="9" fill="currentColor" opacity="0.48"/>
+  <ellipse cx="620" cy="39" rx="2.8" ry="8.5" fill="currentColor" opacity="0.47"/>
+
+  <!-- Small paint splatter dots -->
+  <circle cx="85" cy="15" r="1.5" fill="currentColor" opacity="0.35"/>
+  <circle cx="240" cy="13" r="1.8" fill="currentColor" opacity="0.38"/>
+  <circle cx="395" cy="16" r="1.3" fill="currentColor" opacity="0.32"/>
+  <circle cx="550" cy="14" r="1.6" fill="currentColor" opacity="0.36"/>
+  <circle cx="705" cy="15" r="1.4" fill="currentColor" opacity="0.34"/>
+
+  <!-- Additional organic texture -->
+  <path d="M 30,20 Q 45,16 60,19 T 90,22 T 120,20 T 150,23 T 180,21 T 210,24 T 240,22 T 270,25 T 300,23 T 330,26 T 360,24 T 390,27 T 420,25 T 450,28 T 480,26 T 510,29 T 540,27 T 570,30 T 600,28 T 630,31 T 660,29 T 690,32 T 720,30 T 750,33 T 780,31"
+        stroke="currentColor"
+        stroke-width="6"
+        fill="none"
+        stroke-linecap="round"
+        opacity="0.25"
+        stroke-dasharray="3,2"/>
+</svg>
