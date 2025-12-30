@@ -9,6 +9,14 @@
     --brew-copper: #b87333;
     --brew-text: #3a2a1a;
     --brew-light: #faf7f2;
+
+    /* Brush stroke color filters - adjust these to change brush stroke colors */
+    --brush-copper-filter: brightness(0) saturate(100%) invert(55%) sepia(25%)
+        saturate(1500%) hue-rotate(345deg) brightness(95%) contrast(85%);
+    --brush-amber-filter: brightness(0) saturate(100%) invert(75%) sepia(15%)
+        saturate(800%) hue-rotate(340deg) brightness(90%) contrast(85%);
+    --brush-brown-filter: brightness(0) saturate(100%) invert(35%) sepia(20%)
+        saturate(600%) hue-rotate(350deg) brightness(80%) contrast(90%);
 }
 
 * {
@@ -92,6 +100,7 @@ nav ul {
 
 nav li {
     position: relative;
+    z-index: 1;
 }
 
 nav a {
@@ -111,10 +120,10 @@ nav a {
 nav a::before {
     content: "";
     position: absolute;
-    bottom: -4px;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 8px;
+    height: 12px;
     background-image: url("/images/brush-stroke-underline.svg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -124,7 +133,8 @@ nav a::before {
     transition:
         opacity 0.4s ease,
         transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-    color: var(--brew-copper);
+    z-index: -1;
+    filter: var(--brush-copper-filter);
 }
 
 nav a:hover::before,
@@ -192,25 +202,27 @@ h2 a {
     position: relative;
     display: inline-block;
     transition: color 0.3s ease;
+    z-index: 1;
 }
 
 h2 a::after {
     content: "";
     position: absolute;
-    bottom: -8px;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 10px;
+    height: 16px;
     background-image: url("/images/brush-stroke-underline.svg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     opacity: 0;
-    transform: scaleX(0) translateY(-5px);
+    transform: scaleX(0) translateY(0);
     transform-origin: left;
     transition:
         opacity 0.5s ease,
         transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    color: var(--brew-amber);
+    z-index: -1;
+    filter: var(--brush-amber-filter);
 }
 
 h2 a:hover::after {
@@ -409,6 +421,7 @@ pre code {
 .brush-accent {
     position: relative;
     display: inline-block;
+    z-index: 1;
 }
 
 .brush-accent::after {
@@ -417,13 +430,13 @@ pre code {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 8px;
+    height: 12px;
     background-image: url("/images/brush-stroke-underline.svg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     opacity: 0.6;
-    color: var(--brew-amber);
     z-index: -1;
+    filter: var(--brush-amber-filter);
 }
 
 /* Button Styles */

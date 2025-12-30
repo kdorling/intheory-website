@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Brush Stroke Behind Text Demo | Artisan Brewery &amp; Taproom</title>
+
+      <link rel="stylesheet" href="/css/main.min.ffefcd01d94669a5a722f1a7784c2530387c110492ef4effa2cb8ea222f586de.css" integrity="sha256-/&#43;/NAdlGaaWnIvGneEwlMDh8EQSS707/osuOoiL1ht4=" crossorigin="anonymous">
+
+
+        <script src="/js/main.b70171f996ff7df9b54f368dc3be8796db188823a7dd34ea3e3cdf3b6313d428.js" integrity="sha256-twFx&#43;Zb/ffm1TzaNw76HltsYiCOn3TTqPjzfO2MT1Cg=" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+  <header>
+    <h1>Artisan Brewery &amp; Taproom</h1>
+
+  <nav>
+    <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="/beers/">Our Beers</a>
+    </li>
+    <li>
+      <a href="/taproom/">Taproom</a>
+    </li>
+    <li>
+      <a href="/events/">Events</a>
+    </li>
+    <li>
+      <a href="/about/">About</a>
+    </li>
+    <li>
+      <a href="/contact/">Contact</a>
+    </li>
+    </ul>
+  </nav>
+
+
+  </header>
+  <main>
+    
+  <h1>Brush Stroke Behind Text Demo</h1>
+
+  
+  
+  <time datetime="2024-01-15T00:00:00&#43;00:00">January 15, 2024</time>
+
+  <h1 id="brush-stroke-behind-text-demo">Brush Stroke Behind Text Demo</h1>
+<p>This page demonstrates the new brush stroke effect that appears <strong>behind the text</strong> instead of underneath it.</p>
+<h2 id="navigation-links">Navigation Links</h2>
+<p>Hover over the navigation links at the top of this page to see the copper-colored brush strokes appear behind the text.</p>
+<h2 id="heading-links-with-brush-strokes">Heading Links with Brush Strokes</h2>
+<p><a href="#example">This is a clickable heading with brush stroke behind</a></p>
+<p>Hover over the heading above to see the amber brush stroke appear behind the text. The stroke is positioned behind the letters, creating an integrated, hand-painted look.</p>
+<h2 id="inline-accent-elements">Inline Accent Elements</h2>
+<p>You can also add brush strokes to any text using the <code>.brush-accent</code> class:</p>
+<p>This is normal text, but <span class="brush-accent">this text has a brush stroke behind it</span>.</p>
+<h2 id="how-it-works">How It Works</h2>
+<p>The brush strokes now use:</p>
+<ol>
+<li><strong>Position: absolute</strong> - To position relative to the text</li>
+<li><strong>Bottom: 0</strong> - To align with the text baseline</li>
+<li><strong>Z-index: -1</strong> - To place the stroke behind the text</li>
+<li><strong>CSS Filters</strong> - To adjust colors without editing SVG files</li>
+</ol>
+<h2 id="adjustable-colors">Adjustable Colors</h2>
+<p>The colors are controlled by CSS custom properties:</p>
+<ul>
+<li><code>--brush-copper-filter</code> - Used for navigation links (copper/orange tone)</li>
+<li><code>--brush-amber-filter</code> - Used for headings and accents (amber/gold tone)</li>
+<li><code>--brush-brown-filter</code> - Available for custom uses (brown tone)</li>
+</ul>
+<h3 id="example-color-variations">Example Color Variations</h3>
+<p>To change the brush stroke colors, edit the CSS variables in <code>themes/brew/assets/css/main.css</code>:</p>
+<p><strong>Red Strokes:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">--brush-copper-filter</span><span style="color:#f92672">:</span> <span style="color:#f92672">brightness</span><span style="color:#f92672">(</span><span style="color:#f92672">0</span><span style="color:#f92672">)</span> <span style="color:#f92672">saturate</span><span style="color:#f92672">(</span><span style="color:#f92672">100</span><span style="color:#f92672">%)</span> <span style="color:#f92672">invert</span><span style="color:#f92672">(</span><span style="color:#f92672">35</span><span style="color:#f92672">%)</span> <span style="color:#f92672">sepia</span><span style="color:#f92672">(</span><span style="color:#f92672">80</span><span style="color:#f92672">%)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">saturate</span><span style="color:#f92672">(</span><span style="color:#f92672">2500</span><span style="color:#f92672">%)</span> <span style="color:#f92672">hue-rotate</span><span style="color:#f92672">(</span><span style="color:#f92672">350deg</span><span style="color:#f92672">)</span> <span style="color:#f92672">brightness</span><span style="color:#f92672">(</span><span style="color:#f92672">100</span><span style="color:#f92672">%)</span> <span style="color:#f92672">contrast</span><span style="color:#f92672">(</span><span style="color:#f92672">95</span><span style="color:#f92672">%);</span>
+</span></span></code></pre></div><p><strong>Blue Strokes:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">--brush-amber-filter</span><span style="color:#f92672">:</span> <span style="color:#f92672">brightness</span><span style="color:#f92672">(</span><span style="color:#f92672">0</span><span style="color:#f92672">)</span> <span style="color:#f92672">saturate</span><span style="color:#f92672">(</span><span style="color:#f92672">100</span><span style="color:#f92672">%)</span> <span style="color:#f92672">invert</span><span style="color:#f92672">(</span><span style="color:#f92672">40</span><span style="color:#f92672">%)</span> <span style="color:#f92672">sepia</span><span style="color:#f92672">(</span><span style="color:#f92672">60</span><span style="color:#f92672">%)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">saturate</span><span style="color:#f92672">(</span><span style="color:#f92672">2000</span><span style="color:#f92672">%)</span> <span style="color:#f92672">hue-rotate</span><span style="color:#f92672">(</span><span style="color:#f92672">200deg</span><span style="color:#f92672">)</span> <span style="color:#f92672">brightness</span><span style="color:#f92672">(</span><span style="color:#f92672">95</span><span style="color:#f92672">%)</span> <span style="color:#f92672">contrast</span><span style="color:#f92672">(</span><span style="color:#f92672">90</span><span style="color:#f92672">%);</span>
+</span></span></code></pre></div><p><strong>Green Strokes:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">--brush-brown-filter</span><span style="color:#f92672">:</span> <span style="color:#f92672">brightness</span><span style="color:#f92672">(</span><span style="color:#f92672">0</span><span style="color:#f92672">)</span> <span style="color:#f92672">saturate</span><span style="color:#f92672">(</span><span style="color:#f92672">100</span><span style="color:#f92672">%)</span> <span style="color:#f92672">invert</span><span style="color:#f92672">(</span><span style="color:#f92672">50</span><span style="color:#f92672">%)</span> <span style="color:#f92672">sepia</span><span style="color:#f92672">(</span><span style="color:#f92672">50</span><span style="color:#f92672">%)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">saturate</span><span style="color:#f92672">(</span><span style="color:#f92672">1200</span><span style="color:#f92672">%)</span> <span style="color:#f92672">hue-rotate</span><span style="color:#f92672">(</span><span style="color:#f92672">80deg</span><span style="color:#f92672">)</span> <span style="color:#f92672">brightness</span><span style="color:#f92672">(</span><span style="color:#f92672">90</span><span style="color:#f92672">%)</span> <span style="color:#f92672">contrast</span><span style="color:#f92672">(</span><span style="color:#f92672">85</span><span style="color:#f92672">%);</span>
+</span></span></code></pre></div><h2 id="technical-details">Technical Details</h2>
+<h3 id="height-adjustment">Height Adjustment</h3>
+<p>The brush stroke height determines how much shows behind the text:</p>
+<ul>
+<li><strong>8px</strong> - Subtle, barely visible</li>
+<li><strong>12px</strong> - Default, shows behind most letters</li>
+<li><strong>16px</strong> - Bold, shows prominently behind text</li>
+<li><strong>20px</strong> - Very bold, almost like a highlight</li>
+</ul>
+<h3 id="opacity-control">Opacity Control</h3>
+<p>Each element has its own opacity setting:</p>
+<ul>
+<li>Navigation links: <code>opacity: 0.8</code> on hover</li>
+<li>Heading links: <code>opacity: 0.7</code> on hover</li>
+<li>Accent elements: <code>opacity: 0.6</code> always visible</li>
+</ul>
+<h2 id="browser-support">Browser Support</h2>
+<p>CSS filters are supported in all modern browsers (Chrome, Firefox, Safari, Edge). The effect gracefully degrades in older browsers—they simply won&rsquo;t see the colored strokes.</p>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="/themes/brew/BRUSHSTROKE-COLOR-GUIDE.md">BRUSHSTROKE-COLOR-GUIDE.md</a> - Complete color customization guide</li>
+<li><a href="/themes/brew/BRUSHSTROKE-GUIDE.md">BRUSHSTROKE-GUIDE.md</a> - General brushstroke usage guide</li>
+</ul>
+<hr>
+<h2 id="test-section">Test Section</h2>
+<p><a href="#test">Another heading with brush stroke effect</a></p>
+<p>Hover over navigation links, headings, and <span class="brush-accent">inline accents</span> to see the brush strokes appear behind the text with smooth animations.</p>
+
+  
+
+
+  </main>
+  <footer>
+    <div class="footer-content">
+    <p>&copy; 2025 Artisan Brewery &amp; Taproom. Handcrafted with passion.</p>
+    <p class="tagline">Brewing excellence, one batch at a time.</p>
+</div>
+
+  </footer>
+</body>
+</html>

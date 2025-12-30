@@ -9,6 +9,13 @@
     <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Brush Stroke Behind Text Demo</title>
+      <link>https://example.org/brush-demo/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/brush-demo/</guid>
+      <description>&lt;h1 id=&#34;brush-stroke-behind-text-demo&#34;&gt;Brush Stroke Behind Text Demo&lt;/h1&gt;&#xA;&lt;p&gt;This page demonstrates the new brush stroke effect that appears &lt;strong&gt;behind the text&lt;/strong&gt; instead of underneath it.&lt;/p&gt;&#xA;&lt;h2 id=&#34;navigation-links&#34;&gt;Navigation Links&lt;/h2&gt;&#xA;&lt;p&gt;Hover over the navigation links at the top of this page to see the copper-colored brush strokes appear behind the text.&lt;/p&gt;&#xA;&lt;h2 id=&#34;heading-links-with-brush-strokes&#34;&gt;Heading Links with Brush Strokes&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;#example&#34;&gt;This is a clickable heading with brush stroke behind&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Hover over the heading above to see the amber brush stroke appear behind the text. The stroke is positioned behind the letters, creating an integrated, hand-painted look.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Copper Trail Amber Ale</title>
       <link>https://example.org/beers/copper-trail-amber/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
