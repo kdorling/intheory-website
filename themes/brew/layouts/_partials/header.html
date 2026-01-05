@@ -1,8 +1,14 @@
 <div class="header-logo-row">
     <div class="header-logo-cell">
-        <img src="/images/logo.svg" alt="{{ site.Title }}" class="site-logo" />
+        <div class="header-logo-inner-cell">
+            <img
+                src="/images/logo.svg"
+                alt="{{ site.Title }}"
+                class="site-logo"
+            />
+            {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+        </div>
     </div>
-    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
     <img
         src="/images/header.svg"
         alt="Header decoration"
