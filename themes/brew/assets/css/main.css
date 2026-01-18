@@ -397,14 +397,21 @@ footer::before {
 /* Horizontal Rules */
 hr {
     border: none;
-    height: 12px;
-    background-image: url("/images/brush-stroke-horizontal.svg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    height: 40px;
     margin: 2.5rem auto;
-    opacity: 0.6;
-    color: var(--brew-amber);
-    max-width: 600px;
+    position: relative;
+    background-image:
+        url("/images/bar-start.svg"), url("/images/bar-mid2.svg"),
+        url("/images/bar-end.svg");
+    background-size:
+        auto 100%,
+        auto 100%,
+        auto 100%;
+    background-repeat: no-repeat, repeat-x, no-repeat;
+    background-position:
+        left center,
+        center,
+        right center;
 }
 
 /* Lists */
