@@ -1,4 +1,4 @@
-# 🍺 Artisan Brewery Website - Brushstroke Theme
+# 🍺 In Theory Brewing Website - Brushstroke Theme
 
 A beautifully crafted Hugo website featuring hand-painted brushstroke aesthetics designed specifically for craft breweries and taprooms.
 

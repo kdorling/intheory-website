@@ -65,21 +65,22 @@ body {
             transparent 50%
         );
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Container */
 main {
-    margin: 0 auto;
     padding: 2rem;
     background: var(--main-bg);
     border-left: var(--border-width) solid var(--border-color);
     border-right: var(--border-width) solid var(--border-color);
+    flex: 1;
 }
 
 /* Header with Two Rows */
 header {
     position: relative;
-    margin: 0 auto 0;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -109,6 +110,7 @@ header {
     flex-shrink: 0;
     margin-top: 2rem;
     margin-left: -5rem;
+    margin-bottom: 3rem;
 }
 
 /* Header Bottom Row - Full width image */
@@ -372,13 +374,13 @@ p {
     margin-bottom: 1.2rem;
     font-size: 1.5rem;
     line-height: 2.5rem;
+    text-align: center;
 }
 
 /* Footer with Brushstroke */
 footer {
     position: relative;
-    margin: 0 auto 0;
-    padding: 3rem 2rem 2rem;
+    padding: 0;
     text-align: center;
     color: var(--brew-cream);
     background: var(--footer-bg);
@@ -386,19 +388,22 @@ footer {
     border-right: var(--border-width) solid var(--border-color);
 }
 
-footer::before {
-    content: "";
-    position: absolute;
-    top: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60%;
-    height: 12px;
-    background-image: url("/images/brush-stroke-horizontal.svg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    opacity: 0.5;
-    filter: var(--brush-amber-filter);
+.footer-top-row {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    background-color: white;
+}
+
+.footer-image {
+    width: 100%;
+    height: 75px;
+    display: block;
+    transform: scaleX(-1) scaleY(-1);
+}
+
+.footer-content {
+    padding: 3rem 2rem 2rem;
 }
 
 .footer-content p {
@@ -512,6 +517,7 @@ pre code {
         margin-left: 0;
         margin-right: 0;
         object-fit: contain;
+        margin-bottom: 2rem;
     }
 
     nav ul {
@@ -550,10 +556,6 @@ pre code {
     main {
         padding: 1.8rem;
     }
-
-    footer {
-        padding: 2.5rem 1.8rem 1.8rem;
-    }
 }
 
 /* Tablets */
@@ -572,7 +574,6 @@ pre code {
     .site-logo {
         width: 100%;
         max-width: 100%;
-        max-height: 120px;
         height: auto;
         margin-left: 0;
         margin-right: 0;
@@ -649,10 +650,6 @@ pre code {
         padding: 1.5rem;
     }
 
-    footer {
-        padding: 2.5rem 1.5rem 1.5rem;
-    }
-
     .footer-content p {
         font-size: 0.9rem;
     }
@@ -679,7 +676,6 @@ pre code {
     .site-logo {
         width: 100%;
         max-width: 100%;
-        max-height: 100px;
         height: auto;
         margin-left: 0;
         margin-right: 0;
@@ -775,10 +771,6 @@ pre code {
         padding: 1rem;
     }
 
-    footer {
-        padding: 2rem 1rem 1rem;
-    }
-
     footer::before {
         width: 70%;
         height: 10px;
@@ -829,7 +821,6 @@ pre code {
     .site-logo {
         width: 100%;
         max-width: 100%;
-        max-height: 80px;
         height: auto;
         margin-left: 0;
         margin-right: 0;
@@ -891,10 +882,6 @@ pre code {
 
     main {
         padding: 0.8rem;
-    }
-
-    footer {
-        padding: 1.5rem 0.8rem 0.8rem;
     }
 
     .footer-content p {

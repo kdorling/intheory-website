@@ -1,11 +1,11 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'Artisan Brewery & Taproom'
+title = 'In Theory Brewing'
 theme = 'brew'
 
 [params]
   description = 'Handcrafted beers brewed with passion and tradition'
-  author = 'Artisan Brewery'
+  author = 'In Theory Brewing'
 
 [menu]
   [[menu.main]]
@@ -42,3 +42,7 @@ theme = 'brew'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
